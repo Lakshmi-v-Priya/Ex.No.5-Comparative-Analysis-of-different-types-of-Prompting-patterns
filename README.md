@@ -21,7 +21,7 @@ Explain the concept of Machine Learning to a second-year IT student.
 
 ---
 
-## 1️⃣ Step 1: Basic Prompt
+## Step 1: Basic Prompt
 
 **Basic Prompt:**
 
@@ -37,7 +37,7 @@ Explain the concept of Machine Learning to a second-year IT student.
 
 ---
 
-## 2️⃣ Step 2: Convert into Zero-shot Prompt
+## Step 2: Convert into Zero-shot Prompt
 
 (Zero-shot = direct question without structure or examples)
 
@@ -55,7 +55,7 @@ Explain the concept of Machine Learning to a second-year IT student.
 
 ---
 
-## 3️⃣ Step 3: Extend into Few-shot Prompt (with at least 2 examples)
+## Step 3: Extend into Few-shot Prompt (with at least 2 examples)
 
 (Few-shot = providing examples to guide format)
 
@@ -89,7 +89,7 @@ Explain the concept of Machine Learning to a second-year IT student.
 
 ---
 
-## 4️⃣ Step 4: Rewrite into Chain-of-Thought Prompt
+## Step 4: Rewrite into Chain-of-Thought Prompt
 
 (Chain-of-Thought = reasoning shown step by step)
 
