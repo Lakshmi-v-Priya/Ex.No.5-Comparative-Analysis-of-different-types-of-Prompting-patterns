@@ -1,179 +1,189 @@
 # EXP 5: COMPARATIVE ANALYSIS OF DIFFERENT TYPES OF PROMPTING PATTERNS AND EXPLAIN WITH VARIOUS TEST SCENARIOS
 **NAME :** LAKSHMI PRIYA.V 	**REG NO :** 212223220049
 
+
 ## Aim
-To test and compare how different prompting patterns (Naïve/Broad vs Basic/Refined prompts) influence ChatGPT’s responses across multiple scenarios. The analysis focuses on Quality, Accuracy, and Depth of generated outputs.
+
+To test and compare how different prompting techniques (Zero-shot, Few-shot, and Chain-of-Thought) influence the quality, accuracy, and depth of AI-generated responses across the same task.
 
 ---
 
-## AI Tool Used
-- ChatGPT (GPT-5.2 model)
+## Objective
+
+To understand how a single task can be refined into multiple prompting techniques and analyze how clarity and structure impact AI output.
 
 ---
 
-## Definition of the Two Prompt Types
+# Activity
 
-### 1. Naïve Prompt (Broad / Unstructured Prompt)
-A naïve prompt is short, general, and lacks specific instructions or context.  
-It does not guide the AI clearly about format, audience, tone, or depth.
-
-**Example:**
-> Explain photosynthesis.
+## Selected Task
+Explain the concept of Machine Learning to a second-year IT student.
 
 ---
 
-### 2. Basic Prompt (Clear / Structured Prompt)
-A basic prompt is detailed and structured.  
-It includes:
-- Clear instructions  
-- Context  
-- Target audience  
-- Format requirements  
-- Depth expectations  
-
-**Example:**
-> Explain photosynthesis in simple language suitable for a 10th-grade student. Include the process, chemical equation, and importance in 150 words.
-
----
-
-## Test Scenarios
-
-The following scenarios were selected:
-
-1. Creative Story Generation  
-2. Factual Question  
-3. Concept Summary  
-4. Advice/Recommendation  
-
----
-
-## Experiment Execution
-
-For each scenario:
-- A Naïve Prompt was given first.
-- Then a Basic Prompt was given.
-- Outputs were recorded and compared.
-
----
-
-## Comparative Table
-
-| Scenario | Naïve Prompt Output | Basic Prompt Output | Quality | Accuracy | Depth |
-|-----------|---------------------|----------------------|----------|-----------|--------|
-| Creative Story | Short, generic story | Structured story with theme and moral | Basic > Better | Both accurate | Basic > More detailed |
-| Factual Question | Simple definition | Definition + types + examples | Basic > Clear | Both accurate | Basic > More informative |
-| Summary | Very short paragraph | Organized summary with key points | Basic > Structured | Both accurate | Basic > Detailed |
-| Advice | General suggestions | Step-by-step structured plan | Basic > Practical | Both accurate | Basic > More actionable |
-
----
-
-## Detailed Scenario Analysis
-
-### Scenario 1: Creative Story
-
-**Naïve Prompt:**
-> Write a story about space.
-
-**Observation:**
-- Short
-- Generic
-- Limited character development
+## 1️⃣ Step 1: Basic Prompt
 
 **Basic Prompt:**
-> Write a 300-word creative science fiction story about a young astronaut discovering a hidden planet. Include emotional elements and a meaningful moral.
 
-**Observation:**
-- Clear storyline
-- Emotional depth
-- Strong conclusion
+> Explain Machine Learning in detail for a second-year IT student. Include definition, types, working principle, real-world applications, advantages, and limitations in about 200 words.
 
 ---
 
-### Scenario 2: Factual Question
-
-**Naïve Prompt:**
-> What is Artificial Intelligence?
-
-**Observation:**
-- Simple definition
-
-**Basic Prompt:**
-> Explain Artificial Intelligence in detail including definition, types, real-world applications, and advantages in about 200 words.
-
-**Observation:**
+### Observed Output Characteristics:
 - Structured explanation
-- Examples included
-- Exam-ready content
+- Clear headings
+- Good depth
+- Suitable for academic use
 
 ---
 
-### Scenario 3: Summary Task
+## 2️⃣ Step 2: Convert into Zero-shot Prompt
 
-**Naïve Prompt:**
-> Summarize cloud computing.
+(Zero-shot = direct question without structure or examples)
 
-**Observation:**
-- Short summary
+**Zero-shot Prompt:**
 
-**Basic Prompt:**
-> Summarize cloud computing in 5 structured points including definition, service models, deployment models, advantages, and examples.
-
-**Observation:**
-- Well-organized
-- Clear classification
-- Informative
+> What is Machine Learning?
 
 ---
 
-### Scenario 4: Advice
-
-**Naïve Prompt:**
-> How can I improve coding skills?
-
-**Observation:**
-- General advice
-
-**Basic Prompt:**
-> Suggest a 4-week structured plan to improve coding skills for a beginner IT student, including daily practice routine, resources, and project ideas.
-
-**Observation:**
-- Week-wise plan
-- Practical steps
-- Clear improvement path
+### Observed Output Characteristics:
+- Short explanation
+- Simple definition
+- Limited depth
+- No structured sections
 
 ---
 
-## Overall Analysis : 
+## 3️⃣ Step 3: Extend into Few-shot Prompt (with at least 2 examples)
 
-### Quality
-Basic prompts consistently produced well-structured and organized responses.
+(Few-shot = providing examples to guide format)
 
-### Accuracy
-Accuracy remained high in both cases, but Basic prompts ensured completeness.
+**Few-shot Prompt:**
 
-### Depth
-Basic prompts resulted in deeper explanations, while Naïve prompts were surface-level.
-
----
-
-## Key Findings
-
-- Clear prompts improve response quality.
-- Providing context increases relevance.
-- Specifying format improves organization.
-- Mentioning word limits controls output length.
-- Defining audience improves clarity level.
-
----
-
-## Conclusion
-
-The experiment clearly shows that Basic (structured) prompts generate higher quality, deeper, and more useful outputs compared to Naïve prompts.
-
-Prompt clarity directly impacts the effectiveness of AI-generated responses.
+> Explain the following computer science concepts in a structured format (Definition, Types, Applications, Advantages):
+>
+> Example 1:
+> Artificial Intelligence  
+> Definition: AI enables machines to simulate human intelligence.  
+> Types: Narrow AI, General AI  
+> Applications: Chatbots, robotics  
+> Advantages: Automation, efficiency  
+>
+> Example 2:
+> Cloud Computing  
+> Definition: Delivery of computing services over the internet.  
+> Types: IaaS, PaaS, SaaS  
+> Applications: Data storage, web hosting  
+> Advantages: Scalability, cost reduction  
+>
+> Now explain: Machine Learning
 
 ---
 
-## RESULT
+### Observed Output Characteristics:
+- Followed structured format
+- Clearly separated sections
+- Included applications and advantages
+- Better clarity than zero-shot
 
-The prompt for the above said problem executed successfully.
+---
+
+## 4️⃣ Step 4: Rewrite into Chain-of-Thought Prompt
+
+(Chain-of-Thought = reasoning shown step by step)
+
+**Chain-of-Thought Prompt:**
+
+> Explain Machine Learning step by step.  
+> First define it.  
+> Then explain why it is needed.  
+> Then describe how it works.  
+> Then discuss its types.  
+> Finally provide real-world examples and explain its advantages and limitations.  
+> Show reasoning clearly in a logical flow.
+
+---
+
+### Observed Output Characteristics:
+- Logical flow
+- Cause-and-effect reasoning
+- Deep explanation
+- Most comprehensive response
+
+---
+
+# Evaluation Method Used
+
+## Rubric-Based Evaluation Method
+
+Responses were evaluated based on:
+
+| Criteria  | Description |
+|-----------|------------|
+| Quality   | Structure, clarity, organization |
+| Accuracy  | Correctness of information |
+| Depth     | Level of explanation and detail |
+
+Each parameter is scored out of 5.
+
+---
+
+# Comparative Analysis Table
+
+| Prompt Type        | Quality (5) | Accuracy (5) | Depth (5) | Overall |
+|--------------------|------------|--------------|------------|----------|
+| Zero-shot          | 3          | 4            | 3          | Basic |
+| Basic Prompt       | 4          | 5            | 4          | Good |
+| Few-shot           | 4          | 5            | 4          | Structured |
+| Chain-of-Thought   | 5          | 5            | 5          | Excellent |
+
+---
+
+# Analysis
+
+## Zero-shot Prompt
+- Suitable for quick answers.
+- Lacks structure.
+- Limited explanation depth.
+
+## Basic Prompt
+- Clear instructions improved response organization.
+- More detailed than zero-shot.
+
+## Few-shot Prompt
+- Model followed provided format.
+- Produced structured academic-style answer.
+- More consistent organization.
+
+## Chain-of-Thought Prompt
+- Best logical reasoning.
+- Step-by-step clarity.
+- Deepest and most informative output.
+- Ideal for exam preparation and technical learning.
+
+---
+
+# Key Insights
+
+- Prompt clarity directly improves output quality.
+- Providing examples guides formatting effectively.
+- Chain-of-Thought enhances reasoning and explanation depth.
+- Zero-shot works for simple or quick queries.
+- Structured prompts are best for academic and technical tasks.
+
+---
+
+# Conclusion
+
+The experiment demonstrates that refining prompts significantly enhances AI output.
+
+Among all techniques, Chain-of-Thought prompting produced the highest quality, accuracy, and depth.
+
+Therefore, structured and reasoning-based prompts are recommended for educational and professional use.
+
+---
+
+# Result
+
+The corresponding prompt is executed successfully.
